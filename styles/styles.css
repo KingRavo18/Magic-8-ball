@@ -1,0 +1,90 @@
+main{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#top-half{
+    width:100%;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#outerCircle{
+    border-radius: 50%;
+    background-color: black;
+    height: 35rem;
+    width: 35rem;
+    display: flex;
+}
+#innerCircle{
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    padding-top: 1.7rem;
+    height: 11.3rem;
+    width: 13rem;
+    font-size: 200%;
+    display: block;
+    margin: auto;
+}
+#bottom-half{
+    width:100%;
+    height: 15rem;
+    padding-top: 2rem;
+}
+#bottom-half button{
+    background-color: #04AA6D; /* Green */
+    border: solid, #04AA6D;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#bottom-half button:hover{
+    background-color: #ffffff; /* Green */
+    color: black;
+    
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-2px, -4px) rotate(-2deg); }
+    20% { transform: translate(-6px, 2px) rotate(2deg); }
+    30% { transform: translate(6px, 4px) rotate(0deg); }
+    40% { transform: translate(2px, -2px) rotate(2deg); }
+    50% { transform: translate(-2px, 4px) rotate(-2deg); }
+    60% { transform: translate(-6px, 2px) rotate(0deg); }
+    70% { transform: translate(6px, 2px) rotate(-2deg); }
+    80% { transform: translate(-2px, -2px) rotate(2deg); }
+    90% { transform: translate(2px, 4px) rotate(0deg); }
+    100% { transform: translate(2px, -4px) rotate(-2deg); }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #outerCircle{
+        height: 25rem;
+        width: 25rem;
+    }
+    #innerCircle{
+        padding-top: 0rem;
+        padding-bottom:1.7rem;
+        height: 6.3rem;
+        width: 8rem;
+        font-size: 180%;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    #outerCircle{
+        height: 22rem;
+        width: 22rem;
+    }
+  }
