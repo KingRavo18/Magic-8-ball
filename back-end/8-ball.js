@@ -4,7 +4,7 @@ function shake(){
 }
 
 function eightball() {
-    let message = ["Nice","You suck", " Help yourself","No lives matter","You should do it","Noooo!","Might Work","You're screwed"];
+    let message = ["Nice","You suck", " Help yourself","You should do it","Noooo!","Might Work","You're screwed"];
     let x = Math.round(Math.random() * 7);
     document.getElementById("innerCircle").style.animation = "none";
     document.getElementById("outerCircle").style.animation = "none";
